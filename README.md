@@ -60,3 +60,31 @@ sudo systemctl restart mongod
 ```shell
 mongosh
 ```
+
+### Time to Get Started
+
+- To see existing databases
+
+```shell
+show dbs
+```
+
+- Create and connect to a new database
+
+```shell
+use shop
+```
+
+- Create a collection on the fly and insert
+
+```shell
+db.products.insertOne({ "name": "A Book", "price": 12.99 })
+db.products.insertOne({ "name": "A T-Shirt", "price": 22.99, "description": "High quality T-Shirt" })
+db.products.insertOne({ "name": "A Computer", "price": 1122.99, "description": "High quality Computer", "details": { "cpu": "Intel", "memory": 32 } })
+```
+
+- Look at the data
+
+```shell
+db.products.find().pretty()
+```
