@@ -88,3 +88,32 @@ db.products.insertOne({ "name": "A Computer", "price": 1122.99, "description": "
 ```shell
 db.products.find().pretty()
 ```
+
+### Install python
+
+```bash
+sudo apt-get install python3
+sudo apt-get install python3-pip        # Install pip
+sudo apt-get install python3-autopep8   # Install autopep8
+```
+
+### Install Jupyter Notebook
+
+- Install
+
+```shell
+pip install jupyterlab
+pip install notebook
+```
+
+- Run the jupyter notebook
+
+```shell
+jupyter notebook
+```
+
+### Install pymongo
+
+```shell
+pip install pymongo
+```
